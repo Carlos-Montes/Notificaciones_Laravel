@@ -1,0 +1,134 @@
+.cmnotify-container{
+    box-sizing: border-box;
+    max-width: 300px;
+    overflow: hidden;
+    padding: 16px;
+    position: fixed;
+}
+.cmnotify-bottom-center{
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cmnotify-bottom-left{
+    bottom: 0px;
+    left: 0px;
+}
+.cmnotify-bottom-right{
+    bottom: 0px;
+    right: 0px;
+}
+.cmnotify-top-center{
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.cmnotify-top-left{
+    top: 0px;
+    left: 0px;
+}
+.cmnotify-top-right{
+    top: 0px;
+    right: 0px;
+}
+.cmnotify{
+    background-color: #fff;
+    border: 1px solid #f1f2f3;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: flex;
+    height: 0;
+    margin: 10px;
+    max-width: 248px;
+    opacity: 0.7;
+    overflow: hidden;
+    padding: 0px 10px;
+    user-select: none;
+    width: 248px;
+}
+.cmnotify-icon {
+    align-items: center;
+    animation: rotateIcon 1s ease-in-out infinite;
+    border-radius: 16px;
+    display: flex;
+    height: 32px !important;
+    justify-content: center;
+    margin-right: 8px;
+    width: 32px;
+}
+.cmnotify-icon i {
+    color: #fff;
+}
+.cmnotify-icon svg {
+    fill: white !important;
+}
+.cmnotify-text {
+    align-items: center;
+    color: #343a40;
+    display: flex;
+    flex: 1;
+}
+.cmnotify-danger .cmnotify-icon {
+    background-color: #dc3545;
+}
+.cmnotify-dark .cmnotify-icon {
+    background-color: #343a40;
+}
+.cmnotify-info .cmnotify-icon {
+    background-color: #17a2b8;
+}
+.cmnotify-light .cmnotify-icon {
+    background-color: #f8f9fa;
+}
+.cmnotify-secundary .cmnotify-icon {
+    background-color: #6c757d;
+}
+.cmnotify-warning .cmnotify-icon {
+    background-color: #ffc107;
+}
+.cmnotify-success .cmnotify-icon {
+    background-color: #28a745;
+}
+.cmnotify-primary .cmnotify-icon {
+    background-color: #007bff;
+}
+.cmnotify-light .cmnotify-icon i{
+    background-color: #6c757d;
+}
+.cmnotify-light .cmnotify-icon svg{
+    fill: #6c757d !important;
+}
+.cmnotify-show {
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+    transform: scale(1.0);
+    transition: all 0.2s linear;
+}
+
+.cmnotify-hide {
+    height: 0px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    33% {
+        transform: rotate(10deg);
+    }
+    66% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.cmnotify-sh {
+    box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, .1);
+    -moz-box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, .1);
+    -webkit-box-shadow: 0 0.25rem 1.125rem rgba(75, 70, 92, .1);
+}
